@@ -56,10 +56,10 @@ CONFIGURATION
 Example configuration::
 
     domain: example.com
-    resourse: Conference Room
+    resource: Conference Room
     cred: ~/.oauth/gfreespace
 
-Save configuration file to **~/.gfreespace/config**
+Save configuration file to **~/.gfreespace**
 
 USAGE
 =====
