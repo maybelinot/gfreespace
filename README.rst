@@ -32,7 +32,7 @@ and generate credentials. Please use your web browser and go to
 
 * In section **"Boost your app with a Google API"** click on **"Enable an API"** button.
 
-* A table of available APIs is shown. Switch **"Drive API"** to **"ON"** state. Other APIs might be switched off, for our purpose.
+* A table of available APIs is shown. Switch **"Calendar API"** to **"ON"** state. Other APIs might be switched off, for our purpose.
 
 * On the left-side menu click on **"APIS & auth"** -> **"Credentials"**.
 
@@ -46,7 +46,7 @@ and generate credentials. Please use your web browser and go to
 
 * Click on **"Create Client ID"** button.
 
-* Click on **"Download JSON"** button and store the downloaded file on your file system. Please be aware, the file contains your private credentials, so take care of the file in the same way you care of your private SSH key; i.e. move downloaded JSON file to **~/.gdrive_private** or specify location in config file. 
+* Click on **"Download JSON"** button and store the downloaded file on your file system. Please be aware, the file contains your private credentials, so take care of the file in the same way you care of your private SSH key; i.e. move downloaded JSON file to **~/.oauth/calendar.json** or specify location in config file. 
 
 * Then, the first time you run it your browswer window will opena google authorization request page. Approve authorization and then the credentials will work as expected.
 
@@ -57,7 +57,6 @@ Example configuration::
 
     domain: example.com
     resource: Conference Room
-    cred: ~/.oauth/gfreespace
 
 Save configuration file to **~/.gfreespace**
 
