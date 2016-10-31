@@ -17,7 +17,7 @@ import xml.etree.ElementTree as ET
 
 from apiclient import discovery
 from apiclient import errors
-from dateutil.parser import parser
+from dateutil.parser import parse
 from gdata.calendar_resource.client import CalendarResourceClient
 import gdata.gauth
 import oauth2client
@@ -83,9 +83,6 @@ def check_room(service, datetime, room_info):
     cal_id = room_info['cal_id']
 
     start_dt, end_dt = datetime
-    # start_dt = start_dt.isoformat("T") + "Z"
-    # end_dt = end_dt.isoformat("T") + "Z"
-
     service.calendarList().insert(body={'id': cal_id}).execute()
 
     eventsResult = service.events().list(
